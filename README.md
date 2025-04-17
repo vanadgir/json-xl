@@ -2,10 +2,7 @@
 
 Web application for converting JSON into downloadable Excel files
 
-Client
 * HTML/CSS/JS
-
-Server
 * FastAPI
 * XlsxWriter
 

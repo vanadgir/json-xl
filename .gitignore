@@ -1,2 +1,4 @@
 /server/__pycache__
 venv
+client/.vite/deps/
+

@@ -13,13 +13,16 @@ async function submitJson() {
   }
 
   try {
-    const response = await fetch(`http://127.0.0.1:8000/convert?filename=${encodeURIComponent(filename)}`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(parsed)
-    });
+    const response = await fetch(
+      `/convert?filename=${encodeURIComponent(filename)}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(parsed),
+      }
+    );
 
     if (!response.ok) {
       throw new Error(`Server error: ${response.statusText}`);
@@ -37,3 +40,5 @@ async function submitJson() {
     errorDiv.textContent = "Error downloading file: " + err.message;
   }
 }
+
+window.submitJson = submitJson;

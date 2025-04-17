@@ -1,6 +1,6 @@
 # JSON-XL
 
-Web application for converting JSON to downloadable Excel files
+Web application for converting JSON into downloadable Excel files
 
 Client
 * HTML/CSS/JS
@@ -8,3 +8,8 @@ Client
 Server
 * FastAPI
 * XlsxWriter
+
+To set up server:
+```cd server```
+```pip install -r requirements.txt```
+```uvicorn main:app --reload```

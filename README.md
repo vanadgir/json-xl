@@ -8,13 +8,17 @@ Web application for converting JSON into downloadable Excel files
 
 To set up server:
 
-- `cd server`
-- `make venv` (to create venv files)
-- `make install` (to install Python dependencies)
-- `make run` (to start FastAPI server)
+```bash
+cd server
+make venv # (to create virtual env)
+make install # (to install Python dependencies)
+make run # (to start FastAPI server)
+```
 
 To set up client:
 
-- `cd client`
-- `make install` (to install npm dependencies)
-- `make run` (to start Vite dev server)
+```bash
+cd client
+make install # (to install npm dependencies)
+make run # (to start Vite dev server)
+```
